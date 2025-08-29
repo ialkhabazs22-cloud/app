@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lendura Capital – Apply Now</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #2563eb;
+      text-align: center;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #1e4db7;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Business Funding Application</h2>
+    <form id="fundingForm">
+      <input type="text" placeholder="Full Name" name="name" required>
+      <input type="email" placeholder="Email Address" name="email" required>
+      <input type="tel" placeholder="Phone Number" name="phone" required>
+      <input type="text" placeholder="Business Name" name="business" required>
+      <select name="amount" required>
+        <option value="">Select Funding Amount</option>
+        <option>$10,000 - $50,000</option>
+        <option>$50,000 - $250,000</option>
+        <option>$250,000+</option>
+      </select>
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("fundingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Form submitted! We’ll be in touch soon.");
+      // TODO: replace with API call to backend or service
+    });
+  </script>
+</body>
+</html>
